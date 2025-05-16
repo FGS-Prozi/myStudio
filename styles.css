@@ -89,6 +89,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: var(--hover-color);
+    font-weight: 600;
     transition: all 0.33s ease-in-out;
 }
 /*
@@ -299,19 +300,19 @@ form[name="NEWSLETTER"] {
 */
 
 
-#card-container {
+.card-container {
     display: flex;
     flex-direction: row;
     gap: 32px;
 }
 
-#card-container h5 {
+.card-container h5 {
     font-size: var(--font-normal);
     text-align: center;
     padding: 0 24px;
 }
 
-#card-container p {
+.card-container p {
     font-size: var(--font-small);
     text-indent: 12px;
     padding: 0 24px;
@@ -339,4 +340,54 @@ form[name="NEWSLETTER"] {
     background-color: var(--hover-color);
     transition: all 0.33s ease-in-out;
     cursor: pointer;
+}
+
+.review-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.review-card-container h5 {
+    font-size: var(--font-normal);
+    text-align: center;
+    padding: 0 24px;
+}
+
+.review-card-container p {
+    font-size: var(--font-small);
+    text-indent: 12px;
+    padding: 0 24px;
+}
+
+.review-card {
+    background-color: var(--side-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border-radius: 24px;
+}
+
+.review-card img {
+    margin-top: 32px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.star-icon {
+    margin: 4px;
+    width: 28px;
+    height: 28px;
+    fill: gold;
+    transition: all 0.33s ease-in-out;
+}
+
+#contact article p {
+    background-color: var(--side-color);
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 24px 64px 24px 64px;
+    text-align: center;
 }

@@ -40,6 +40,18 @@
         <symbol id="icon-geo" viewbox="0 0 16 16">
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
         </symbol>
+
+        <symbol id="full-star" viewbox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </symbol>
+
+        <symbol id="half-star" viewbox="0 0 16 16">
+            <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+        </symbol>
+
+        <symbol id="caret-fill-down" viewbox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </symbol>
       </svg>
 </head>
 <body>
@@ -83,7 +95,7 @@
         <section id="service">
             <article>
                 <h4>SERVICE</h4>
-                <div id="card-container">
+                <div class="card-container">
                     <div class="card">
                         <img class="placeholder" src="./assets/images/placeholder.png">
                         <h5>
@@ -118,7 +130,7 @@
         <section id="project">
             <article>
                 <h4>PROJECTS</h4>
-                <div id="card-container">
+                <div class="card-container">
                     <div class="card">
                         <img class="placeholder" src="./assets/images/placeholder.png">
                         <h5>
@@ -158,23 +170,46 @@
         <section id="reviews">
             <article>
                 <h4>REVIEWS</h4>
-                <div class="review-card">
-                    image-001
-                    <p>
-                        Ocena / Opinia
-                    </p>
-                </div>
-                <div class="review-card">
-                    image-002
-                    <p>
-                        Ocena / Opinia
-                    </p>
-                </div>
-                <div class="review-card">
-                    image-003
-                    <p>
-                        Ocena / Opinia
-                    </p>
+                <div class="review-card-container">
+                    <div class="review-card">
+                        <img class="placeholder" src="./assets/images/person.jpg">
+                        <h5>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#half-star"></use></svg>
+                        </h5>
+                        <p>
+                            "Świetna współpraca od początku do końca. Strona działa szybko, wygląda nowocześnie i idealnie dopasowuje się do urządzeń mobilnych. Widać pełne zaangażowanie i znajomość najnowszych technologii."
+                        </p>
+                    </div>
+                    <div class="review-card">
+                        <img class="placeholder" src="./assets/images/person.jpg">
+                        <h5>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                        </h5>
+                        <p>
+                            "Materiał zyskał nowe życie — montaż dynamiczny, kolory świetnie dobrane, a dźwięk czysty i profesjonalny. Idealnie oddany klimat, wszystko zgodnie z wizją!"
+                        </p>
+                    </div>
+                    <div class="review-card">
+                        <img class="placeholder" src="./assets/images/person.jpg">
+                        <h5>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#full-star"></use></svg>
+                            <svg class="star-icon"><use href="#half-star"></use></svg>
+                        </h5>
+                        <p>
+                            "Zamówiona gra 2D przerosła oczekiwania — płynna rozgrywka, intuicyjne sterowanie i dopracowane szczegóły. Programista z pasją i dużą wiedzą techniczną."
+                        </p>
+                    </div>
                 </div>
             </article>
         </section>
@@ -183,7 +218,14 @@
             <article>
                 <h4>CONTACT</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, maiores excepturi mollitia maxime exercitationem, tempora iste eaque praesentium labore facere velit natus quibusdam soluta tenetur eveniet ab odio assumenda quam?
+                    Interested in working together or have a question? Feel free to reach out. I'm available for new projects, collaborations, or simply to connect.
+                    <br>
+                    <br>
+                    I'll get back to you as soon as possible.
+                    <br>
+                    <svg class="svg-icon"><use href="#caret-fill-down"></use></svg>
+                    <svg class="svg-icon"><use href="#caret-fill-down"></use></svg>
+                    <svg class="svg-icon"><use href="#caret-fill-down"></use></svg>
                 </p>
             </article>
         </section>
